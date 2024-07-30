@@ -8,7 +8,7 @@ import ic3 from '@/public/ic3.svg'
 
 const Ten = () => {
     return (
-        <div className="flex flex-col items-center justify-center py-8 bg-gradient-to-b from-orange-50 to-orange-100 shadow-lg shadow-orange-100">
+        <div className="flex flex-col items-center justify-center py-8 bg-white">
             <div className="bg-orange-500 mx-5 lg:w-8/12 text-center py-10  rounded-lg relative flex flex-col items-center justify-center px-5">
                 <svg className="absolute top-0 left-0 w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                     <path fill="#f97316" fillOpacity="1" d="M0,32L1440,320L1440,320L0,320Z"></path>

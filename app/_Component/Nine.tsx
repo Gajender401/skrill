@@ -2,7 +2,7 @@ import React from 'react';
 
 const Nine = () => {
     return (
-        <div className="flex flex-col items-center py-16 bg-orange-100">
+        <div className="flex flex-col items-center py-16 bg-white">
             <h2 className="text-3xl font-bold mb-4">Learn More, Spend Less</h2>
             <p className="text-center mb-10 max-w-2xl text-gray-600">
                 While our competitors offer courses at significantly higher prices, we are committed to providing quality education at affordable rates without compromising on any program features.

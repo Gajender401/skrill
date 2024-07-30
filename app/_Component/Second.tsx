@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Second = () => {
     return (
-        <div className=" min-h-screen flex flex-col bg-orange-100">
+        <div className=" min-h-screen flex flex-col bg-white">
             <div className="flex justify-center">
                 <p className="mt-10 lg:text-[50px] font-semibold">How Skrill School Works</p>
             </div>

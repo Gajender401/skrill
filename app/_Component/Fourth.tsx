@@ -62,7 +62,7 @@ import React from 'react'
 
 const Fourth = () => {
     return (
-        <div className="bg-orange-100 py-10">
+        <div className="bg-white py-10">
             {/* <div className="flex justify-center">
                 <div className="text-center">
                     <p className="lg:text-4xl text-2xl font-semibold mb-5">Why choose us?</p>

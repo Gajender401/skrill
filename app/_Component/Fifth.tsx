@@ -97,7 +97,7 @@ import React from 'react'
 const Fifth = () => {
     return (
         <div className='relative'>
-            <div className="absolute inset-0 bg-no-repeat bg-cover " style={{ backgroundImage: "url('/fifthbg.svg')" }} />
+            <div className="absolute inset-0 bg-no-repeat bg-cover bg-white " style={{ backgroundImage: "url('/fifthbg.svg')" }} />
             <div className="flex lg:flex-row flex-col justify-center items-center">
 
                 <div className="relative lg:w-5/12 py-20 px-5">

@@ -20,7 +20,7 @@ const Footer = () => {
   };
 
   return (
-    <div>
+    <div className='bg-white'>
       <div className="w-full z-40" style={backgroundImageStyle}>
         <div className="w-full z-10" style={backgroundImageStyle2}>
           <footer className="text-gray-600 body-font">

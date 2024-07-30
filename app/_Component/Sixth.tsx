@@ -21,7 +21,7 @@ const Sixth = () => {
   };
 
   return (
-    <div className="w-full bg-orange-100 text-center py-10">
+    <div className="w-full bg-white text-center py-10">
       <div style={accordionStyle}>
         <h2 className="lg:text-4xl font-bold text-black mt-20">Frequently Asked Questions</h2>
         <p className="text-lg mt-5 text-black">All you need to know about our courses and services.</p>
