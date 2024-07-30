@@ -24,7 +24,9 @@ const Navbar = () => {
             <Image className="w-auto mt-20" width={20} height={10} src="/mainlogo.svg" alt="Logo" />
           </a>
         </div>
-        <div className="flex sm:items-center sm:gap-5">
+
+
+        <div className="lg:flex justify-between gap-5  hidden">
           <div className="relative inline-block text-left">
             <a
               href="#"
@@ -35,7 +37,7 @@ const Navbar = () => {
               }}
             >
               Our Programme
-              {/* {isDropdownOpen ? <FaChevronUp className="ml-1" /> : <FaChevronDown className="ml-1" />} */}
+              {isDropdownOpen ? <FaChevronUp className="ml-1" /> : <FaChevronDown className="ml-1" />}
             </a>
             {isDropdownOpen && (
               <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
@@ -51,7 +53,7 @@ const Navbar = () => {
           <a href="#" className="text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">Contact</a>
           <a href="#" className="text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">FAQ</a>
         </div>
-        <div className="hidden md:flex gap-2">
+        <div className="hidden lg:flex gap-2">
           <Button className='bg-orange-500 hover:bg-orange-600 rounded-full'><a href='/register'>Register</a></Button>
           <Button className='bg-orange-500 hover:bg-orange-600 rounded-full'><a href='/login'>Login</a></Button>
         </div>
