@@ -18,10 +18,10 @@ const Navbar = () => {
 
   return (
     <nav className="bg-[#2f2622] py-5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-        <div className="flex items-center mt-20">
+      <div className="flex justify-center gap-40 h-16 items-center px-5 ">
+        <div className="">
           <a href="/" aria-label="Home">
-            <Image className="w-auto" width={120} height={60} src="/mainlogo.svg" alt="Logo" />
+            <Image className=" lg:w-80  w-40 lg:mt-20 mt-10" width={10} height={60} src="/mainlogo.svg" alt="Logo" />
           </a>
         </div>
 
