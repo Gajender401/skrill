@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { Button } from './ui/button';
@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <div className="flex items-center">
           <a href="/" aria-label="Home">
-            <Image className="w-auto mt-20" width={20} height={10} src="/mainlogo.svg" alt="Logo" />
+            <Image className="w-auto" width={20} height={10} src="/mainlogo.svg" alt="Logo" />
           </a>
         </div>
         <div className="hidden sm:flex sm:items-center sm:gap-5">
@@ -67,7 +67,7 @@ const Navbar = () => {
             <div className="relative">
               <a
                 href="#"
-                className="text-white  pl-3 pr-4 py-2 border-l-4 border-orange-500 text-base font-medium flex justify-between items-center"
+                className="text-white pl-3 pr-4 py-2 border-l-4 border-orange-500 text-base font-medium flex justify-between items-center"
                 onClick={(e) => {
                   e.preventDefault();
                   toggleDropdown();

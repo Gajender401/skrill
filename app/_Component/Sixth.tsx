@@ -26,10 +26,10 @@ const Sixth = () => {
         <h2 className="lg:text-4xl font-bold text-black mt-20">Frequently Asked Questions</h2>
         <p className="text-lg mt-5 text-black">All you need to know about our courses and services.</p>
         <div className="mt-10">
-          <Accordion type="single" collapsible className="lg:mx-32 bg-rose-950 rounded-lg px-5 ">
+          <Accordion type="single" collapsible className="lg:mx-32 bg-rose-950 rounded-lg px-5">
             <AccordionItem value="item-1">
               <AccordionTrigger className='text-white lg:text-[20px] text-[15px] py-3'>1. What coding languages can I learn on this platform?</AccordionTrigger>
-              <AccordionContent className='text-white lg:text-[20px] text-[15px]'>
+              <AccordionContent className='text-white lg:text-[15px] text-[10px]'>
                 Yes, enjoy a 30-day free trial with a personalized onboarding session to jumpstart your learning journey.
               </AccordionContent>
             </AccordionItem>
@@ -39,7 +39,7 @@ const Sixth = () => {
           <Accordion type="single" collapsible className="lg:mx-32 bg-rose-950 rounded-lg px-5">
             <AccordionItem value="item-2">
               <AccordionTrigger className='text-white lg:text-[20px] text-[15px] py-3'>2. Do I need any prior coding experience to get started?</AccordionTrigger>
-              <AccordionContent className='text-white lg:text-[20px] text-[15px]'>
+              <AccordionContent className='text-white lg:text-[15px] text-[10px]'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda accusantium sapiente, earum doloribus voluptatum reiciendis velit voluptates consequuntur.
               </AccordionContent>
             </AccordionItem>
@@ -49,7 +49,7 @@ const Sixth = () => {
           <Accordion type="single" collapsible className="lg:mx-32 bg-rose-950 rounded-lg px-5">
             <AccordionItem value="item-3">
             <AccordionTrigger className="text-white lg:text-[20px] text-[15px] py-3">3. How do I get help if I&apos;m stuck on a coding problem?</AccordionTrigger>
-            <AccordionContent className='text-white lg:text-[20px] text-[15px]'>
+            <AccordionContent className='text-white lg:text-[15px] text-[10px]'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda accusantium sapiente, earum doloribus voluptatum reiciendis velit voluptates consequuntur.
               </AccordionContent>
             </AccordionItem>
@@ -59,7 +59,7 @@ const Sixth = () => {
           <Accordion type="single" collapsible className="lg:mx-32 bg-rose-950 rounded-lg px-5">
             <AccordionItem value="item-4">
               <AccordionTrigger className='text-white lg:text-[20px] text-[15px] py-3'>4. Can I get a certificate after completing a course?</AccordionTrigger>
-              <AccordionContent className='text-white lg:text-[20px] text-[15px]'>
+              <AccordionContent className='text-white lg:text-[15px] text-[10px]'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda accusantium sapiente, earum doloribus voluptatum reiciendis velit voluptates consequuntur.
               </AccordionContent>
             </AccordionItem>
@@ -69,7 +69,7 @@ const Sixth = () => {
           <Accordion type="single" collapsible className="lg:mx-32 bg-rose-950 rounded-lg px-5">
             <AccordionItem value="item-5">
               <AccordionTrigger className='text-white lg:text-[20px] text-[15px] py-3'>5. Are there any projects or hands-on activities included in the courses?</AccordionTrigger>
-              <AccordionContent className='text-white lg:text-[20px] text-[15px]'>
+              <AccordionContent className='text-white lg:text-[15px] text-[10px]'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda accusantium sapiente, earum doloribus voluptatum reiciendis velit voluptates consequuntur.
               </AccordionContent>
             </AccordionItem>

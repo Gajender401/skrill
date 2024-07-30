@@ -26,7 +26,7 @@ const Ten = () => {
             </div>
 
             <div className="mt-12 text-center ">
-                <div className="text-xl md:text-2xl font-why-choose-us text-orange-500 mb-6">WHY CHOOSE US</div>
+                <div className="text-xl md:text-2xl font-bold text-orange-500 mb-6">WHY CHOOSE US</div>
                 <div className="flex flex-col md:flex-row gap-10 md:gap-20 items-center">
                 <div className="w-full md:w-auto">
                         <Image src={menleft} width={200} height={100} alt='Left Arrow' />
