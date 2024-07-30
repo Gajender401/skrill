@@ -73,12 +73,12 @@ const Footer = () => {
                   <div className="leading-10 mt-8">
                   <p className="text-gray-600">101 Marlow Street, #12-05 Clife Parkview, Singapore 059020. View on Maps</p>
                   <p className="text-gray-600">Inquiries: +65 6156 5519 hello@Newsify.com</p>
-                  <div className="mt-4 flex justify-center md:justify-start">
+                  <div className="mt-4 flex justify-center md:justify-start gap-5">
                     <a href="" className="text-gray-600 hover:text-gray-800 h-20 w-20"><FaTwitter /></a>
-                    <a href="" className="text-gray-600 hover:text-gray-800 h-20 w-20 ml-4"><FaFacebookF /></a>
-                    <a href="" className="text-gray-600 hover:text-gray-800 h-20 w-20 ml-4"><FaLinkedinIn /></a>
-                    <a href="" className="text-gray-600 hover:text-gray-800 h-20 w-20 ml-4"><FaYoutube /></a>
-                    <a href="" className="text-gray-600 hover:text-gray-800 h-20 w-20 ml-4"><FaInstagram /></a>
+                    <a href="" className="text-gray-600 hover:text-gray-800 h-20 w-20"><FaFacebookF /></a>
+                    <a href="" className="text-gray-600 hover:text-gray-800 h-20 w-20"><FaLinkedinIn /></a>
+                    <a href="" className="text-gray-600 hover:text-gray-800 h-20 w-20"><FaYoutube /></a>
+                    <a href="" className="text-gray-600 hover:text-gray-800 h-20 w-20"><FaInstagram /></a>
                   </div>
                   </div>
                 </div>
