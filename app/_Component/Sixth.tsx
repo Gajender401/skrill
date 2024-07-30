@@ -28,7 +28,7 @@ const Sixth = () => {
         <div className="mt-10">
           <Accordion type="single" collapsible className="lg:mx-32 bg-rose-950 rounded-lg px-5 ">
             <AccordionItem value="item-1">
-              <AccordionTrigger className='text-white lg:text-[20px] text-[15px]'>1. What coding languages can I learn on this platform?</AccordionTrigger>
+              <AccordionTrigger className='text-white lg:text-[20px] text-[15px] py-3'>1. What coding languages can I learn on this platform?</AccordionTrigger>
               <AccordionContent className='text-white lg:text-[20px] text-[15px]'>
                 Yes, enjoy a 30-day free trial with a personalized onboarding session to jumpstart your learning journey.
               </AccordionContent>
@@ -38,7 +38,7 @@ const Sixth = () => {
         <div className="mt-5">
           <Accordion type="single" collapsible className="lg:mx-32 bg-rose-950 rounded-lg px-5">
             <AccordionItem value="item-2">
-              <AccordionTrigger className='text-white lg:text-[20px] text-[15px]'>2. Do I need any prior coding experience to get started?</AccordionTrigger>
+              <AccordionTrigger className='text-white lg:text-[20px] text-[15px] py-3'>2. Do I need any prior coding experience to get started?</AccordionTrigger>
               <AccordionContent className='text-white lg:text-[20px] text-[15px]'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda accusantium sapiente, earum doloribus voluptatum reiciendis velit voluptates consequuntur.
               </AccordionContent>
@@ -48,7 +48,7 @@ const Sixth = () => {
         <div className="mt-5">
           <Accordion type="single" collapsible className="lg:mx-32 bg-rose-950 rounded-lg px-5">
             <AccordionItem value="item-3">
-            <AccordionTrigger className="text-white lg:text-[20px] text-[15px]">3. How do I get help if I&apos;m stuck on a coding problem?</AccordionTrigger>
+            <AccordionTrigger className="text-white lg:text-[20px] text-[15px] py-3">3. How do I get help if I&apos;m stuck on a coding problem?</AccordionTrigger>
             <AccordionContent className='text-white lg:text-[20px] text-[15px]'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda accusantium sapiente, earum doloribus voluptatum reiciendis velit voluptates consequuntur.
               </AccordionContent>
@@ -58,7 +58,7 @@ const Sixth = () => {
         <div className="mt-5">
           <Accordion type="single" collapsible className="lg:mx-32 bg-rose-950 rounded-lg px-5">
             <AccordionItem value="item-4">
-              <AccordionTrigger className='text-white lg:text-[20px] text-[15px]'>4. Can I get a certificate after completing a course?</AccordionTrigger>
+              <AccordionTrigger className='text-white lg:text-[20px] text-[15px] py-3'>4. Can I get a certificate after completing a course?</AccordionTrigger>
               <AccordionContent className='text-white lg:text-[20px] text-[15px]'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda accusantium sapiente, earum doloribus voluptatum reiciendis velit voluptates consequuntur.
               </AccordionContent>
@@ -68,7 +68,7 @@ const Sixth = () => {
         <div className="mt-5">
           <Accordion type="single" collapsible className="lg:mx-32 bg-rose-950 rounded-lg px-5">
             <AccordionItem value="item-5">
-              <AccordionTrigger className='text-white lg:text-[20px] text-[15px]'>5. Are there any projects or hands-on activities included in the courses?</AccordionTrigger>
+              <AccordionTrigger className='text-white lg:text-[20px] text-[15px] py-3'>5. Are there any projects or hands-on activities included in the courses?</AccordionTrigger>
               <AccordionContent className='text-white lg:text-[20px] text-[15px]'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda accusantium sapiente, earum doloribus voluptatum reiciendis velit voluptates consequuntur.
               </AccordionContent>
