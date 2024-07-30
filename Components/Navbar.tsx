@@ -26,8 +26,7 @@ const Navbar = () => {
         </div>
         <div className="hidden sm:flex sm:items-center sm:gap-5">
           <div className="relative inline-block text-left">
-            <a
-              href="#"
+            <button
               className="text-white inline-flex items-center px-1 pt-1 text-sm font-medium"
               onClick={(e) => {
                 e.preventDefault();
@@ -35,8 +34,8 @@ const Navbar = () => {
               }}
             >
               Our Programme
-              {/* {isDropdownOpen ? <FaChevronUp className="ml-1" /> : <FaChevronDown className="ml-1" />} */}
-            </a>
+              {isDropdownOpen ? <FaChevronUp className="ml-1" /> : <FaChevronDown className="ml-1" />}
+            </button>
             {isDropdownOpen && (
               <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                 <div className="py-1">
@@ -56,18 +55,17 @@ const Navbar = () => {
           <Button className='bg-orange-500 hover:bg-orange-600 rounded-full'><a href='/login'>Login</a></Button>
         </div>
         <button className="sm:hidden flex items-center" onClick={toggleMobileMenu}>
-          {/* <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg> */}
+          </svg>
         </button>
       </div>
       {isMobileMenuOpen && (
         <div className="sm:hidden bg-[#2f2622]">
           <div className="pt-2 pb-3 space-y-1">
             <div className="relative">
-              <a
-                href="#"
-                className="text-white  pl-3 pr-4 py-2 border-l-4 border-orange-500 text-base font-medium flex justify-between items-center"
+              <button
+                className="text-white pl-3 pr-4 py-2 border-l-4 border-orange-500 text-base font-medium flex justify-between items-center w-full text-left"
                 onClick={(e) => {
                   e.preventDefault();
                   toggleDropdown();
@@ -75,7 +73,7 @@ const Navbar = () => {
               >
                 Our Programme
                 {isDropdownOpen ? <FaChevronUp /> : <FaChevronDown />}
-              </a>
+              </button>
               {isDropdownOpen && (
                 <div className="mt-2 ml-4 pl-4 border-l border-gray-600">
                   <a href="#" className="block px-4 py-2 text-sm text-white hover:bg-gray-100">
