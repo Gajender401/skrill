@@ -25,8 +25,8 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className="hidden lg:flex justify-between gap-5">
-          <div className="relative inline-block text-left">
+        <div className="hidden md:flex justify-between gap-5">
+        <div className="relative  text-left">
             <a
               href="#"
               className="text-white inline-flex items-center px-1 pt-1 text-sm font-medium"
