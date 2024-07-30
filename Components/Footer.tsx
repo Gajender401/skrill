@@ -9,27 +9,27 @@ const Footer = () => {
     backgroundImage: `url(${footerImage.src})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: 'auto',
+    height: '',
   };
 
   const backgroundImageStyle2 = {
     backgroundImage: `url(${footerImage2.src})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
-    height: 'auto',
+    height: '',
   };
 
   return (
     <div className='bg-white'>
-      <div className="w-full z-40" style={backgroundImageStyle}>
-        <div className="w-full z-10" style={backgroundImageStyle2}>
+      <div className="w-full" style={backgroundImageStyle}>
+        <div className="w-full" style={backgroundImageStyle2}>
           <footer className="text-gray-600 body-font">
 
             <div className="container px-5 py-12 mx-auto flex flex-wrap flex-col md:flex-row md:items-start border-b border-neutral-950">
               <div className="flex lg:flex-row flex-col justify-center  w-full ">
                 <div className="w-full lg:w-1/4 mb-4 md:mb-0 lg:ml-0 ml-10 text-center md:text-left">
                   <a href="" className="flex title-font font-medium justify-center md:justify-start text-gray-900">
-                    <Image src="/mainlogo.svg" alt="Logo" width={500} height={48} />
+                    <Image src="/footerlogo.svg" alt="Logo" width={200} height={48} />
                   </a>
                 </div>
 
