@@ -26,7 +26,7 @@ const Navbar = () => {
         </div>
 
 
-        <div className="lg:flex justify-between gap-5  hidden">
+        <div className="lg:flex justify-between gap-5  md:hidden">
           <div className="relative inline-block text-left">
             <a
               href="#"
@@ -53,11 +53,14 @@ const Navbar = () => {
           <a href="#" className="text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">Contact</a>
           <a href="#" className="text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">FAQ</a>
         </div>
-        <div className="hidden lg:flex gap-2">
+        <div className="md:hidden lg:flex gap-2">
           <Button className='bg-orange-500 hover:bg-orange-600 rounded-full'><a href='/register'>Register</a></Button>
           <Button className='bg-orange-500 hover:bg-orange-600 rounded-full'><a href='/login'>Login</a></Button>
         </div>
-        <button className="sm:hidden flex items-center" onClick={toggleMobileMenu}>
+
+
+        
+        <button className="lg:hidden flex items-center" onClick={toggleMobileMenu}>
           <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
