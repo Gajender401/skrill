@@ -24,9 +24,10 @@ const Navbar = () => {
             <Image className="w-auto mt-20" width={20} height={10} src="/mainlogo.svg" alt="Logo" />
           </a>
         </div>
-        <div className="hidden sm:flex sm:items-center sm:gap-5">
+        <div className="flex sm:items-center sm:gap-5">
           <div className="relative inline-block text-left">
-            <button
+            <a
+              href="#"
               className="text-white inline-flex items-center px-1 pt-1 text-sm font-medium"
               onClick={(e) => {
                 e.preventDefault();
@@ -34,8 +35,8 @@ const Navbar = () => {
               }}
             >
               Our Programme
-              {isDropdownOpen ? <FaChevronUp className="ml-1" /> : <FaChevronDown className="ml-1" />}
-            </button>
+              {/* {isDropdownOpen ? <FaChevronUp className="ml-1" /> : <FaChevronDown className="ml-1" />} */}
+            </a>
             {isDropdownOpen && (
               <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                 <div className="py-1">
@@ -64,8 +65,9 @@ const Navbar = () => {
         <div className="sm:hidden bg-[#2f2622]">
           <div className="pt-2 pb-3 space-y-1">
             <div className="relative">
-              <button
-                className="text-white pl-3 pr-4 py-2 border-l-4 border-orange-500 text-base font-medium flex justify-between items-center w-full text-left"
+              <a
+                href="#"
+                className="text-white  pl-3 pr-4 py-2 border-l-4 border-orange-500 text-base font-medium flex justify-between items-center"
                 onClick={(e) => {
                   e.preventDefault();
                   toggleDropdown();
@@ -73,7 +75,7 @@ const Navbar = () => {
               >
                 Our Programme
                 {isDropdownOpen ? <FaChevronUp /> : <FaChevronDown />}
-              </button>
+              </a>
               {isDropdownOpen && (
                 <div className="mt-2 ml-4 pl-4 border-l border-gray-600">
                   <a href="#" className="block px-4 py-2 text-sm text-white hover:bg-gray-100">
