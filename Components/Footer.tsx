@@ -46,7 +46,7 @@ const Footer = () => {
                 </div>
 
 
-                <div className="lg:w-1/4 md:w-1/2 w-full px-4 mt-8 md:mt-0">
+                <div className="lg:w-1/4 md:w-1/2 w-full px-4">
                   <h2 className="title-font font-bold text-gray-900 tracking-widest text-[20px] lg:text-sm">Support Us</h2>
                   <nav className="leading-8">
                     <p><a href="" className="text-gray-600 hover:text-gray-800">Blog</a></p>
