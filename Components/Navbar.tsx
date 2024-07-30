@@ -18,15 +18,23 @@ const Navbar = () => {
 
   return (
     <nav className="bg-[#2f2622] py-5">
-      <div className="flex justify-center gap-40 h-16 items-center px-5 ">
-        <div className="">
+      <div className="flex justify-center gap-40 h-16 items-center px-5">
+        <div className="lg:hidden flex items-center">
+          <button onClick={toggleMobileMenu}>
+            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div className="flex justify-center">
           <a href="/" aria-label="Home">
-            <Image className=" lg:w-80  w-40 lg:mt-20 mt-10" width={10} height={60} src="/mainlogo.svg" alt="Logo" />
+            <Image className="lg:w-80 w-40 lg:mt-20 mt-10" width={10} height={60} src="/mainlogo.svg" alt="Logo" />
           </a>
         </div>
 
         <div className="hidden md:flex justify-between gap-5">
-        <div className="relative  text-left">
+          <div className="relative text-left">
             <a
               href="#"
               className="text-white inline-flex items-center px-1 pt-1 text-sm font-medium"
@@ -52,17 +60,13 @@ const Navbar = () => {
           <a href="#" className="text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">Contact</a>
           <a href="#" className="text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">FAQ</a>
         </div>
-        <div className="hidden md:flex gap-2">
-          <Button className='bg-orange-500 hover:bg-orange-600 rounded-full'><a href='/register'>Register</a></Button>
-          <Button className='bg-orange-500 hover:bg-orange-600 rounded-full'><a href='/login'>Login</a></Button>
-        </div>
 
-        <button className="lg:hidden flex items-center" onClick={toggleMobileMenu}>
-          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </button>
+        <div className="hidden md:flex gap-2">
+          <Button className="bg-orange-500 hover:bg-orange-600 rounded-full"><a href="/register">Register</a></Button>
+          <Button className="bg-orange-500 hover:bg-orange-600 rounded-full"><a href="/login">Login</a></Button>
+        </div>
       </div>
+
       {isMobileMenuOpen && (
         <div className="lg:hidden bg-[#2f2622]">
           <div className="pt-2 pb-3 space-y-1">
@@ -91,8 +95,8 @@ const Navbar = () => {
             <a href="#" className="text-white block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium">FAQ</a>
           </div>
           <div className="flex flex-col gap-2 px-4 py-3">
-            <Button className='bg-orange-500 hover:bg-orange-600 rounded-full w-full'><a href='/register'>Register</a></Button>
-            <Button className='bg-orange-500 hover:bg-orange-600 rounded-full w-full'><a href='/login'>Login</a></Button>
+            <Button className="bg-orange-500 hover:bg-orange-600 rounded-full w-full"><a href="/register">Register</a></Button>
+            <Button className="bg-orange-500 hover:bg-orange-600 rounded-full w-full"><a href="/login">Login</a></Button>
           </div>
         </div>
       )}
