@@ -5,7 +5,7 @@ import { Button } from '@/Components/ui/button';
 
 const Hero = () => {
   return (
-    <div className="relative bg-gradient-to-b from-white to-orange-100 py-12 lg:py-24">
+    <div className="relative bg-gradient-to-b from-white to-orange-100 py-12 lg:py-10">
       <div
         className="absolute inset-0 bg-no-repeat bg-cover bg-center"
         style={{ backgroundImage: "url('/herobg1.svg')" }}
