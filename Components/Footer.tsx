@@ -25,7 +25,7 @@ const Footer = () => {
         <div className="w-full z-10" style={backgroundImageStyle2}>
           <footer className="text-gray-600 body-font">
 
-            <div className="container px-5 py-12 mx-auto flex flex-wrap flex-col md:flex-row md:items-start">
+            <div className="container px-5 py-12 mx-auto flex flex-wrap flex-col md:flex-row md:items-start border-b border-neutral-950">
               <div className="flex lg:flex-row flex-col justify-center  w-full ">
                 <div className="w-full lg:w-1/4 mb-4 md:mb-0 lg:ml-0 ml-10 text-center md:text-left">
                   <a href="" className="flex title-font font-medium justify-center md:justify-start text-gray-900">
@@ -85,7 +85,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="flex lg:flex-row flex-col gap-20 items-center px-10">
+            <div className="flex lg:flex-row flex-col gap-20 items-center px-10 py-10">
               <div className="div">
                 <p className="text-gray-500 text-sm lg:text-center sm:text-left">© 2023 Newsify. All rights reserved</p>
               </div>
