@@ -27,7 +27,7 @@ const Footer = () => {
 
             <div className="container px-5 py-12 mx-auto flex flex-wrap flex-col md:flex-row md:items-start">
               <div className="flex lg:flex-row flex-col justify-center  w-full ">
-                <div className="w-full lg:w-2/4 mb-4 md:mb-0 lg:ml-0 ml-10 text-center md:text-left">
+                <div className="w-full lg:w-1/4 mb-4 md:mb-0 lg:ml-0 ml-10 text-center md:text-left">
                   <a href="" className="flex title-font font-medium justify-center md:justify-start text-gray-900">
                     <Image src="/mainlogo.svg" alt="Logo" width={500} height={48} />
                   </a>
