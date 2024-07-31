@@ -1,13 +1,11 @@
-"use client";
-import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
+'use client'
+import React, { useState } from 'react';
 import { Button } from './ui/button';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -17,82 +15,105 @@ const Navbar = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
-
   return (
-    <nav className={`bg-[#2f2622]  `}>
-      <div className=" flex items-center justify-between ">
-          <a href="/" aria-label="Home">
-            <img  src='/mainlogo.svg' alt='logo' className="-mb-20" />
-          </a>
-        <div className="flex items-center gap-5">
-          <div className="relative inline-block text-left">
-            <a
-              href="#"
-              className="text-white flex items-center flex-row gap-2 px-1 pt-1 text-sm font-medium"
-              onClick={(e) => {
-                e.preventDefault();
-                toggleDropdown();
-              }}
-            >
-              Our Programme
-              {isDropdownOpen ? <FaChevronUp className="ml-1" /> : <FaChevronDown className="ml-1" />}
+    <nav className="bg-[#2f2622]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center">
+            <a href="/" aria-label="Home">
+              <img src='/mainlogo.svg' alt='logo' className="h-28 mt-10 w-auto" />
             </a>
-            {isDropdownOpen && (
-                <div className= " absolute bg-white text-black  p-5">
-                  <a href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">
-                    Fullstack Launchpad
-                  </a>
-                </div>
-            )}
           </div>
-          <a href="#" className="text-white inline-flex items-center px-1 pt-1 text-sm font-medium">About us</a>
-          <a href="#" className="text-white inline-flex items-center px-1 pt-1 text-sm font-medium">Contact</a>
-          <a href="#" className="text-white inline-flex items-center px-1 pt-1 text-sm font-medium">FAQ</a>
-        </div>
-        <div className=" text-white flex gap-2">
-          <Button className='bg-orange-500 hover:bg-orange-600 rounded-full'><a href='/register'>Register</a></Button>
-          <Button className='bg-orange-500 hover:bg-orange-600 rounded-full'><a href='/login'>Login</a></Button>
-        </div>
-        <div className="">
-          <button onClick={toggleMobileMenu} type="button" className="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
-            <svg className="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-          </button>
+          <div className="hidden md:block">
+            <div className="ml-10 flex items-baseline space-x-4">
+              <div className="relative">
+                <a
+                  href="#"
+                  className="text-white flex items-center px-3 py-2 rounded-md text-sm font-medium"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    toggleDropdown();
+                  }}
+                >
+                  Our Programme
+                  {isDropdownOpen ? <FaChevronUp className="ml-1" /> : <FaChevronDown className="ml-1" />}
+                </a>
+                {isDropdownOpen && (
+                  <div className="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                      Fullstack Launchpad
+                    </a>
+                  </div>
+                )}
+              </div>
+              <a href="#" className="text-white px-3 py-2 rounded-md text-sm font-medium">About us</a>
+              <a href="#" className="text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+              <a href="#" className="text-white px-3 py-2 rounded-md text-sm font-medium">FAQ</a>
+            </div>
+          </div>
+          <div className="hidden md:block">
+            <div className="ml-4 flex items-center md:ml-6">
+              <Button className='bg-orange-500 hover:bg-orange-600 rounded-full mr-2'><a href='/register'>Register</a></Button>
+              <Button className='bg-orange-500 hover:bg-orange-600 rounded-full'><a href='/login'>Login</a></Button>
+            </div>
+          </div>
+          <div className="-mr-2 flex md:hidden">
+            <button
+              onClick={toggleMobileMenu}
+              type="button"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span className="sr-only">Open main menu</span>
+              {!isMobileMenuOpen ? (
+                <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              ) : (
+                <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
       </div>
 
-
       {isMobileMenuOpen && (
-        <div className="hidden bg-[#2f2622]">
-          <div className="pt-2 pb-3 space-y-1">
+        <div className="md:hidden" id="mobile-menu">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <div className="relative">
               <a
                 href="#"
-                className="text-white pl-3 pr-4 py-2 border-l-4 border-orange-500 text-base font-medium flex justify-between items-center"
+                className="text-white block px-3 py-2 rounded-md text-base font-medium"
                 onClick={(e) => {
                   e.preventDefault();
                   toggleDropdown();
                 }}
               >
                 Our Programme
-                {isDropdownOpen ? <FaChevronUp /> : <FaChevronDown />}
+                {isDropdownOpen ? <FaChevronUp className="ml-1 inline" /> : <FaChevronDown className="ml-1 inline" />}
               </a>
               {isDropdownOpen && (
-                 <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none text-black">
-                   <a href="#" className="block px-4 py-2 text-sm text-black ">
-                     Fullstack Launchpad
-                   </a>
-               </div>
+                <div className="pl-4">
+                  <a href="#" className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">
+                    Fullstack Launchpad
+                  </a>
+                </div>
               )}
             </div>
-            <a href="#" className="text-white block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium">About us</a>
-            <a href="#" className="text-white block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium">Contact</a>
-            <a href="#" className="text-white block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium">FAQ</a>
+            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About us</a>
+            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">FAQ</a>
           </div>
-          <div className="flex flex-col gap-2 px-4 py-3">
-            <Button className='bg-orange-500 hover:bg-orange-600 rounded-full w-full'><a href='/register'>Register</a></Button>
-            <Button className='bg-orange-500 hover:bg-orange-600 rounded-full w-full'><a href='/login'>Login</a></Button>
+          <div className="pt-4 pb-3 border-t border-gray-700">
+            <div className="flex items-center px-5">
+              <Button className='bg-orange-500 hover:bg-orange-600 rounded-full w-full mb-2'><a href='/register'>Register</a></Button>
+            </div>
+            <div className="flex items-center px-5">
+              <Button className='bg-orange-500 hover:bg-orange-600 rounded-full w-full'><a href='/login'>Login</a></Button>
+            </div>
           </div>
         </div>
       )}
