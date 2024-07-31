@@ -113,8 +113,8 @@ const Fifth = () => {
 
                 <div className="relative lg:w-5/12 p-5">
                     <div className="flex justify-around gap-5 text-white">
-                        <Image src="/slash.svg" width={5} height={3} alt='Star Rating' />
-                        <Image src="/pic_2.svg" width={100} height={3} alt='Star Rating' />
+                        <img src="/slash.svg" width={5} height={3} alt='Star Rating' />
+                        <img src="/pic_2.svg" width={100} height={3} alt='Star Rating' />
                         <div className="div">
                             <p className='font-semibold '>Ashley Cooper</p>
                             <p className='lg:text-20px'>Teamollo delivered the site with inthe timeline as they requested. Inthe end, the client found a 50% increase in traffic with in days since its launch. </p>
@@ -124,8 +124,8 @@ const Fifth = () => {
 
 
                     <div className="flex justify-around gap-5 text-white mt-20">
-                        <Image src="/slash.svg" width={5} height={3} alt='Star Rating' />
-                        <Image src="/pic_2.svg" width={100} height={3} alt='Star Rating' />
+                        <img src="/slash.svg" width={5} height={3} alt='Star Rating' />
+                        <img src="/pic_2.svg" width={100} height={3} alt='Star Rating' />
                         <div className="div">
                             <p className='font-semibold '>Ashley Cooper</p>
                             <p className='lg:text-20px'>Teamollo delivered the site with inthe timeline as they requested. Inthe end, the client found a 50% increase in traffic with in days since its launch. </p>
@@ -135,8 +135,8 @@ const Fifth = () => {
 
 
                     <div className="flex justify-around gap-5 text-white mt-20">
-                        <Image src="/slash.svg" width={5} height={3} alt='Star Rating' />
-                        <Image src="/pic_2.svg" width={100} height={3} alt='Star Rating' />
+                        <img src="/slash.svg" width={5} height={3} alt='Star Rating' />
+                        <img src="/pic_2.svg" width={100} height={3} alt='Star Rating' />
                         <div className="div">
                             <p className='lg:text-white text-black font-semibold '>Ashley Cooper</p>
                             <p className='lg:text-white text-black lg:text-20px'>Teamollo delivered the site with inthe timeline as they requested. Inthe end, the client found a 50% increase in traffic with in days since its launch. </p>

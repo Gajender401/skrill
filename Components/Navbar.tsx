@@ -30,7 +30,7 @@ const Navbar = () => {
           <div className="relative inline-block text-left">
             <a
               href="#"
-              className="text-white inline-flex items-center px-1 pt-1 text-sm font-medium"
+              className="text-white flex items-center flex-row gap-2 px-1 pt-1 text-sm font-medium"
               onClick={(e) => {
                 e.preventDefault();
                 toggleDropdown();
