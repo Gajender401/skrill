@@ -26,7 +26,7 @@ const Navbar = () => {
             <Image  src='/mainlogo.svg' width={100} height={10} alt='logo' className="lg:w-[400px] w-[200px] lg:mt-20 mt-10" />
           </a>
         </div>
-        <div className="hidden sm:flex sm:items-center sm:gap-5">
+        <div className="flex items-center gap-5">
           <div className="relative inline-block text-left">
             <a
               href="#"
@@ -51,11 +51,11 @@ const Navbar = () => {
           <a href="#" className="text-white inline-flex items-center px-1 pt-1 text-sm font-medium">Contact</a>
           <a href="#" className="text-white inline-flex items-center px-1 pt-1 text-sm font-medium">FAQ</a>
         </div>
-        <div className="hidden md:flex gap-2">
+        <div className=" flex gap-2">
           <Button className='bg-orange-500 hover:bg-orange-600 rounded-full'><a href='/register'>Register</a></Button>
           <Button className='bg-orange-500 hover:bg-orange-600 rounded-full'><a href='/login'>Login</a></Button>
         </div>
-        <div className="md:hidden">
+        <div className="">
           <button onClick={toggleMobileMenu} type="button" className="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
             <svg className="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -85,7 +85,7 @@ const Navbar = () => {
 
 
       {isMobileMenuOpen && (
-        <div className="sm:hidden bg-[#2f2622]">
+        <div className="hidden bg-[#2f2622]">
           <div className="pt-2 pb-3 space-y-1">
             <div className="relative">
               <a
