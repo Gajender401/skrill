@@ -19,13 +19,11 @@ const Navbar = () => {
 
 
   return (
-    <nav className={`bg-[#2f2622] lg:px-16 px-5  `}>
-      <div className=" flex items-center justify-between  lg:h-20 ">
-        <div className="flex ">
+    <nav className={`bg-[#2f2622]  `}>
+      <div className=" flex items-center justify-between ">
           <a href="/" aria-label="Home">
-            <Image  src='/mainlogo.svg' width={100} height={10} alt='logo' className="lg:w-[400px] w-[200px] lg:mt-20 mt-10" />
+            <img  src='/mainlogo.svg' alt='logo' className="-mb-20" />
           </a>
-        </div>
         <div className="flex items-center gap-5">
           <div className="relative inline-block text-left">
             <a
@@ -51,7 +49,7 @@ const Navbar = () => {
           <a href="#" className="text-white inline-flex items-center px-1 pt-1 text-sm font-medium">Contact</a>
           <a href="#" className="text-white inline-flex items-center px-1 pt-1 text-sm font-medium">FAQ</a>
         </div>
-        <div className=" flex gap-2">
+        <div className=" text-white flex gap-2">
           <Button className='bg-orange-500 hover:bg-orange-600 rounded-full'><a href='/register'>Register</a></Button>
           <Button className='bg-orange-500 hover:bg-orange-600 rounded-full'><a href='/login'>Login</a></Button>
         </div>
@@ -63,25 +61,6 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
       {isMobileMenuOpen && (
